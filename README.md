@@ -34,7 +34,7 @@ git clone https://github.com
 ### 5. Navigate to the Project Directory
 Move into the newly cloned project workspace:
 ```bash
-cd shell-scripting-projects
+cd shell-example-projects
 ```
 
 ### 6. Configure Authentication Environment Variables
@@ -48,15 +48,15 @@ export token="YOUR_GITHUB_PERSONAL_ACCESS_TOKEN"
 ### 7. Run the Script
 Execute the script by passing the **Organization Name** and **Repository Name** as two trailing command-line arguments:
 ```bash
-./list-collaborators.sh <organization_name> <repository_name>
+./collaborators.sh <organization_name> <repository_name>
 ```
 
 ### 8. Troubleshooting Permissions (If Denied)
 If you encounter a `Permission denied` error when trying to run the file, elevate the file permissions to allow execution:
 ```bash
-chmod +x list-collaborators.sh
+chmod +x collaborators.sh
 ```
-*(Alternatively, you can grant global permissions using `chmod 777 list-collaborators.sh`)*
+*(Alternatively, you can grant global permissions using `chmod 777 collaborators.sh`)*
 
 ### 9. View Output
 Upon successful execution, the terminal screen will instantly print out the formatted list of all collaborators actively assigned to that specific organizational repository.
